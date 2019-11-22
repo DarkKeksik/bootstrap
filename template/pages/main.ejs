@@ -1,13 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
     <% include chanks/links.ejs %>
 </head>
+
 <body>
+    <!-- xs sm md lg -->
+    <div class="container-fluid">
+        <div class="row">
+            <header class="col-12">header</header>
+        </div>
+        
+        <div class="row">
+            <aside class="col-4 push-md-8">aside</aside>
+            <main class="col-8 pull-md-4">main</main>
+        </div>
+        
+        <div class="row">
+            <footer class="col-12">footer</footer>
+        </div>
+    </div>
 
     <% include chanks/scripts.ejs %>
 </body>
+
 </html>
