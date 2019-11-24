@@ -10,18 +10,51 @@
 
 <body>
     <!-- xs sm md lg -->
-    <div class="container-fluid">
-        <div class="row">
-            <header class="col-12">header</header>
+    <div class="w-header">
+        <div class="container">
+            <div class="row">
+                <header class="col-12">header</header>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-main">
+        <div class="container-fluid">
+            <div class="row">
+                <main class="col-sm-12 col-md-9 order-md-2">
+
+                    <!-- Блок с основным контентом -->
+                    <div class="row">
+                        <div class="col-auto">123</div>
+                    </div>
+
+                    <!-- Блок с рекомендациями (.w-100 менее читабелен) -->
+                    <div class="row">
+                        <div class="col">1</div>
+                        <div class="col">2</div>
+                        <div class="col">3</div>
+                        <div class="col">4</div>
+                        <div class="col">5</div>
+                    </div>
+
+                </main>
+                <aside class="col-sm-12 col-md-3 order-md-1">aside</aside>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-footer">
+        <div class="w-footer-pre">
+            <div class="container">
+                pre footer
+            </div>    
         </div>
         
-        <div class="row">
-            <aside class="col-4 push-md-8">aside</aside>
-            <main class="col-8 pull-md-4">main</main>
-        </div>
         
-        <div class="row">
-            <footer class="col-12">footer</footer>
+        <div class="container">
+            <div class="row">
+                <footer class="col-12">footer</footer>
+            </div>
         </div>
     </div>
 

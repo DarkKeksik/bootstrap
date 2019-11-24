@@ -3,3 +3,12 @@
   margin: 0;
   padding: 0;
 }
+.w-header {
+  min-height: 8vh;
+}
+.w-main {
+  min-height: 80vh;
+}
+.w-footer {
+  min-height: 12vh;
+}
