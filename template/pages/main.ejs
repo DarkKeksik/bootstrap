@@ -10,6 +10,7 @@
 
 <body>
     <!-- xs sm md lg -->
+    <!-- https://getbootstrap.com/docs/4.0/utilities/display/ -->
     <div class="w-header">
         <div class="container">
             <div class="row">
@@ -21,11 +22,15 @@
     <div class="w-main">
         <div class="container-fluid">
             <div class="row">
-                <main class="col-sm-12 col-md-9 order-md-2">
+                <aside class="d-none d-sm-block col-sm-12 col-md-3 order-last order-md-first">aside</aside>
+                <main class="col-sm-12 col-md-9">
 
                     <!-- Блок с основным контентом -->
                     <div class="row">
-                        <div class="col-auto">123</div>
+                        <div class="col-12">
+                            <img src="https://picsum.photos/id/237/200/300" alt="" class="img-fluid float-left mr-3">
+                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, cum, libero. Eaque eveniet optio ab quas laborum porro, corrupti consequatur cumque molestias et inventore debitis sint! Suscipit esse, commodi nesciunt.</span>
+                        </div>
                     </div>
 
                     <!-- Блок с рекомендациями (.w-100 менее читабелен) -->
@@ -38,7 +43,6 @@
                     </div>
 
                 </main>
-                <aside class="col-sm-12 col-md-3 order-md-1">aside</aside>
             </div>
         </div>
     </div>
@@ -47,10 +51,10 @@
         <div class="w-footer-pre">
             <div class="container">
                 pre footer
-            </div>    
+            </div>
         </div>
-        
-        
+
+
         <div class="container">
             <div class="row">
                 <footer class="col-12">footer</footer>
