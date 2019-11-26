@@ -11,21 +11,25 @@
 <body>
     <!-- xs sm md lg -->
     <!-- https://getbootstrap.com/docs/4.0/utilities/display/ -->
-    <div class="w-header">
+    <div class="w-header w-header_position w-header_cosmetic navbar navbar navbar-light bg-light p-1">
         <div class="container">
-            <div class="row">
-                <header class="col-12">header</header>
-            </div>
+            <header>
+                <a class="navbar-brand text-secondary" href="#">
+                    <img class="d-inline-block" src="https://i.pinimg.com/236x/fc/8b/22/fc8b2286c7cdd2a8b0e7e61a5f6e8548.jpg" width="100">
+                    Котаблок
+                </a>
+            </header>
         </div>
     </div>
 
-    <div class="w-main">
+    <div class="w-main w-main_position">
         <div class="container-fluid">
             <div class="row">
-                <aside class="d-none d-sm-block col-sm-12 col-md-3 order-last order-md-first">aside</aside>
-                <main class="col-sm-12 col-md-9 p-3">
+                <aside class="aside aside_cosmetic d-none d-sm-block col-sm-12 col-md-2 order-last order-md-first p-3">aside</aside>
+                <main class="col-sm-12 col-md-10 p-3">
 
                     <!-- Блок с основным контентом -->
+                    <!--
                     <div class="row">
                         <div class="col-12">
                             <div class="alert alert-secondary alert-dismissible text-center fade show">
@@ -36,16 +40,45 @@
                             </div>
                         </div>
                     </div>
-                    
+-->
+
                     <div class="row">
                         <div class="col-12">
-                            <h1 class="text-center text-secondary">Кота блог</h1>
-                            <img src="https://i.pinimg.com/236x/fc/8b/22/fc8b2286c7cdd2a8b0e7e61a5f6e8548.jpg" alt="" class="img-fluid float-left mr-3">
-                            <p>
-                                <button type="button" class="btn bg-secondary text-white" data-toggle="modal" data-target="#sendMe">
-                                  Напиши мне что-нибудь
-                                </button>
-                            </p>
+                            <h1 class="text-center text-secondary mb-3">Котаблок</h1>
+
+
+                            <div class="container">
+                                <div class="row">
+                                    <div class="card col p-0 m-1">
+                                        <h5 class="card-header">Мой твит от 26.11</h5>
+                                        <div class="card-body">
+                                            <h5 class="card-title">День сосущего монстра!</h5>
+                                            <p class="card-text">
+                                                <mark>Привет</mark>, сегодня круглый сосущий монстр с хоботом, пытался меня засосать, но я
+                                                опрокинул на него стакан воды! ВАХАХАХ!
+                                            </p>
+                                            <button type="button" class="btn bg-secondary text-white" data-toggle="modal" data-target="#sendMe">
+                                                Напиши мне что-нибудь
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="card col p-0 m-1">
+                                        <h5 class="card-header">Мой твит от 25.11</h5>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Привет мир!</h5>
+                                            <p class="card-text">
+                                                <mark>Привет</mark>, пока хозяин уехал <del>а я уже успел нассать ему в тапки</del><br> я написал свой блок, за качество кода не ручаюсь, ведь у меня лапки, но думаю не все так плохо.
+                                            </p>
+                                            <button type="button" class="btn bg-secondary text-white" data-toggle="modal" data-target="#sendMe">
+                                                Напиши мне что-нибудь
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
                         </div>
                     </div>
 

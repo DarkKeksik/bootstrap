@@ -5,10 +5,22 @@
 }
 .w-header {
   min-height: 8vh;
+  z-index: 1;
 }
-.w-main {
-  min-height: 80vh;
+.w-header_position {
+  position: fixed;
+  width: 100%;
+}
+.w-header_cosmetic {
+  box-shadow: 0 0 10px #ababab;
+}
+.w-main_position {
+  padding-top: 6.25rem;
 }
 .w-footer {
   min-height: 12vh;
+}
+.aside_cosmetic {
+  background: #848484;
+  color: white;
 }

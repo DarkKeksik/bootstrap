@@ -8,11 +8,29 @@
 .w {
     &-header {
         min-height: 8vh;
+        z-index: 1;
+        
+        &_position {
+            position: fixed;
+            width: 100%;
+        }
+        &_cosmetic {
+            box-shadow: 0 0 10px #ababab;
+        }
     }
     &-main {
-        min-height: 80vh;
+        &_position {
+            padding-top: 6.25rem;
+        }
     }
     &-footer {
         min-height: 12vh;
+    }
+}
+
+.aside {
+    &_cosmetic {
+        background: #848484;
+        color: white;
     }
 }
