@@ -23,23 +23,64 @@
         <div class="container-fluid">
             <div class="row">
                 <aside class="d-none d-sm-block col-sm-12 col-md-3 order-last order-md-first">aside</aside>
-                <main class="col-sm-12 col-md-9">
+                <main class="col-sm-12 col-md-9 p-3">
 
                     <!-- Блок с основным контентом -->
                     <div class="row">
                         <div class="col-12">
-                            <img src="https://picsum.photos/id/237/200/300" alt="" class="img-fluid float-left mr-3">
-                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, cum, libero. Eaque eveniet optio ab quas laborum porro, corrupti consequatur cumque molestias et inventore debitis sint! Suscipit esse, commodi nesciunt.</span>
+                            <div class="alert alert-secondary alert-dismissible text-center fade show">
+                                Спасибо что зашел!
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="text-center text-secondary">Кота блог</h1>
+                            <img src="https://i.pinimg.com/236x/fc/8b/22/fc8b2286c7cdd2a8b0e7e61a5f6e8548.jpg" alt="" class="img-fluid float-left mr-3">
+                            <p>
+                                <button type="button" class="btn bg-secondary text-white" data-toggle="modal" data-target="#sendMe">
+                                  Напиши мне что-нибудь
+                                </button>
+                            </p>
                         </div>
                     </div>
 
                     <!-- Блок с рекомендациями (.w-100 менее читабелен) -->
-                    <div class="row">
-                        <div class="col">1</div>
-                        <div class="col">2</div>
-                        <div class="col">3</div>
-                        <div class="col">4</div>
-                        <div class="col">5</div>
+                    <div class="container mt-4 mt-sm-3">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card-group">
+                                    <div class="card col p-0">
+                                        <img class="card-img-top" src="https://i.pinimg.com/236x/fc/8b/22/fc8b2286c7cdd2a8b0e7e61a5f6e8548.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                        </div>
+                                    </div>
+                                    <div class="card col p-0">
+                                        <img class="card-img-top" src="https://i.pinimg.com/236x/fc/8b/22/fc8b2286c7cdd2a8b0e7e61a5f6e8548.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                        </div>
+                                    </div>
+                                    <div class="card col p-0">
+                                        <img class="card-img-top" src="https://i.pinimg.com/236x/fc/8b/22/fc8b2286c7cdd2a8b0e7e61a5f6e8548.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </main>
@@ -62,6 +103,25 @@
         </div>
     </div>
 
+    <!-- Модальные окна -->
+    <div id="sendMe" class="modal show fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Напиши мне</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <p>Ты пока не можешь мне написать, но я знаю что если бы мог, то написал бы что то очень классное :З</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <% include chanks/scripts.ejs %>
 </body>
 
