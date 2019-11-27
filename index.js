@@ -7,7 +7,7 @@ app.set("view engine", "ejs");
 
 app.use("/bootstrap", express.static(`${__dirname}/node_modules/bootstrap/dist`));
 app.use("/jquery", express.static(`${__dirname}/node_modules/jquery/dist`));
-app.use("/favicon", express.static(`${__dirname}/node_modules/font-awesome/css`));
+app.use("/favicon", express.static(`${__dirname}/node_modules/font-awesome`));
 app.use("/static", express.static(`${__dirname}/template`));
 
 app.get("/", (req, res)=>{
