@@ -20,7 +20,18 @@
 .w-footer {
   min-height: 12vh;
 }
+.w-footer-pre_cosmetic {
+  background: #191919;
+}
+.w-footer_cosmetic {
+  background: #2b2b2b;
+}
 .aside_cosmetic {
-  background: #848484;
+  background: #e0e0e0;
   color: white;
+}
+.card-group__img {
+  height: 9rem;
+  background-position: top center;
+  background-repeat: no-repeat;
 }
