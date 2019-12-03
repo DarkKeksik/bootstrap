@@ -5,6 +5,7 @@ ____
 <b>Технологии</b>:
 <ul>
   <li>NodeJS</li>
+  <li>MongoDB</li>
   <li>bootstrap, jquery, font-awesome</li>
 </ul>
 
