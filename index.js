@@ -12,5 +12,6 @@ app.use("/static", express.static(`${__dirname}/template`));
 
 app.get("/", (req, res) => {
     res.render(`${__dirname}/template/pages/main`);
-    console.log( mongoDB_result );
+    console.log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+    console.log( mongoDB_result.dbResult );
 });

@@ -13,6 +13,8 @@ client.connect(err => {
         collection = db.collection("news");
     
     // Импортируем в главный модуль
-    module.exports.db = db;
+    console.log(db);
+    console.log("################################################################");
+    module.exports.dbResult = db;
     client.close();
 });
