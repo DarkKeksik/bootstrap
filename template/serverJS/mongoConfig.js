@@ -11,9 +11,16 @@ let dbName = "catblog";
 client.connect(err => {
     assert.equal(null, err);
     let db = client.db(dbName);
-    let collection = db.collection("news");
+    let collection = db.collection("news").find({title: {$exists: true}}, {_id: 0});
     
-    // Импортируем в главный модуль
-    module.exports.dbResult = db;
+    let allNews = [];
+    collection.each((err, item)=>{
+        if (item !== null) {
+            allNews.push(item);
+        };
+    });
+    
+    // Импортируем полученную db в главный модуль
+    module.exports.allNews = allNews;
     client.close();
 });
