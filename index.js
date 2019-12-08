@@ -19,7 +19,7 @@ mongoConfig.connectBD().then((data)=>{
 });
 
 app.get("/", (req, res) => {
-    mongoConfig.connectBD().then((data) => {        
+    mongoConfig.connectBD().then((data) => {
         // Выбираем коллекцию из базы
         let collection = data.collection("news").find({title: {$exists: true}}, {_id: 0});
         

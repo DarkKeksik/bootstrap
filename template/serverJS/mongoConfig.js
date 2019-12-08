@@ -11,13 +11,13 @@ let dbName = "catblog";
 let connectDB = () => {
     return new Promise((resolve, reject) => {
         client.connect(err => {
-            return resolve(client.db(dbName));
+            resolve(client.db(dbName));
         });
     });
 };
 
 // Составляем массив из коллекции MongoDB
-collectionInArr = (collection) => {
+let collectionInArr = (collection) => {
     return new Promise((resolve, reject) => {
         let allNews = [];
         
@@ -33,23 +33,3 @@ collectionInArr = (collection) => {
 
 module.exports.connectBD = connectDB;
 module.exports.collectionInArr = collectionInArr;
-
-
-
-
-//client.connect(err => {
-//    assert.equal(null, err);
-//    let db = client.db(dbName);
-//    let collection = db.collection("news").find({title: {$exists: true}}, {_id: 0});
-//    
-//    let allNews = [];
-//    collection.forEach((item) => {
-//        allNews.push(item);
-//    }, ()=> {
-//        console.log("Good");
-//    });
-//    
-//    // Импортируем полученную db в главный модуль
-//    module.exports.allNews = allNews;
-//    client.close();
-//});
