@@ -8,15 +8,8 @@ app.set("view engine", "ejs");
 app.use("/bootstrap", express.static(`${__dirname}/node_modules/bootstrap/dist`));
 app.use("/jquery", express.static(`${__dirname}/node_modules/jquery/dist`));
 app.use("/favicon", express.static(`${__dirname}/node_modules/font-awesome`));
+app.use("/vue", express.static(`${__dirname}/node_modules/vue/dist`));
 app.use("/static", express.static(`${__dirname}/template`));
-
-mongoConfig.connectBD().then((data)=>{
-    let collection = data.collection("news").find({title: {$exists: true}}, {_id: 0});
-    mongoConfig.collectionInArr(collection).then((data)=>{
-        console.log("test");
-        console.log(data);
-    });
-});
 
 app.get("/", (req, res) => {
     mongoConfig.connectBD().then((data) => {
@@ -29,6 +22,5 @@ app.get("/", (req, res) => {
                 allNews: data
             });
         });
-        
     });
 }); 
